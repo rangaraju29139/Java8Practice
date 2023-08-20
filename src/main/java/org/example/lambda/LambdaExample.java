@@ -41,6 +41,17 @@ public class LambdaExample {
         };
         rectangle.draw();
 
+        Shape square = () -> {
+            System.out.println("square draw");
+        };
+        square.draw();
+
+        Shape circle = () -> {
+            System.out.println("circle draw");
+        };
+        circle.draw();
+
+
     }
 
 }
