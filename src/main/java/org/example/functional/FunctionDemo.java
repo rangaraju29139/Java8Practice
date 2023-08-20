@@ -18,6 +18,11 @@ public class FunctionDemo {
 
         Function<String,Integer> f = new FunctionImpl();
         System.out.println(f.apply("hello"));
+
+        Function<String,Integer> f2 = (s) ->  s.length();
+
+        f2.apply("hello using lambda");
+
     }
 
 
