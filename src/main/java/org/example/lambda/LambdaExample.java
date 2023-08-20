@@ -54,6 +54,8 @@ public class LambdaExample {
         print(circle);
         print(square);
 
+        print(() -> System.out.println("this is the lambda function"));
+
     }
 
 
