@@ -39,19 +39,28 @@ public class LambdaExample {
         Shape rectangle = () -> {
             System.out.println("rectangle draw");
         };
-        rectangle.draw();
+//        rectangle.draw();
 
         Shape square = () -> {
             System.out.println("square draw");
         };
-        square.draw();
+//        square.draw();
 
         Shape circle = () -> {
             System.out.println("circle draw");
         };
-        circle.draw();
-
+//        circle.draw();
+        print(rectangle);
+        print(circle);
+        print(square);
 
     }
+
+
+    // passing the lambda function as an argument
+    private static void print(Shape shape){
+        shape.draw();
+    }
+
 
 }
