@@ -76,6 +76,10 @@ public class ListForEachExample {
             System.out.println(entry.getValue().getName());
         }
 
+        map.forEach((k,v)-> {
+            System.out.println(k + "=" + v);
+        });
+
 
 
 
